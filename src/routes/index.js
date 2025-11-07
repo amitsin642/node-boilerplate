@@ -2,7 +2,7 @@
 import express from "express";
 import healthRoutes from "./health.route.js";
 import userRoutes from "./user.route.js";
-import { asyncHandler } from "../middlewares/asyncHandler.js";
+import { asyncHandler } from "../middlewares/asyncHandler.middleware.js";
 
 const router = express.Router();
 

@@ -5,7 +5,7 @@ import cors from "cors";
 import compression from "compression";
 import morgan from "morgan";
 import routes from "../routes/index.js";
-import { errorHandler, notFoundHandler } from "../middlewares/errorHandler.js";
+import { errorHandler, notFoundHandler } from "../middlewares/errorHandler.middleware.js";
 import logger from "../utils/logger.utils.js";
 import config from "../config/config.js";
 
