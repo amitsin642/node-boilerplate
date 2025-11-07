@@ -1,7 +1,7 @@
 // src/server.js
 import createApp from "./app.js";
 import config from "./config/config.js";
-import logger from "./utils/logger.js";
+import logger from "./utils/logger.utils.js";
 import sequelize from "./loaders/sequelize.js";
 import initializeRedis from "./loaders/redis.js";
 

@@ -1,7 +1,7 @@
 // src/loaders/redis.js
 import { createClient } from "redis";
 import redisConfig from "../config/redis.js";
-import logger from "../utils/logger.js";
+import logger from "../utils/logger.utils.js";
 
 let redisClient;
 

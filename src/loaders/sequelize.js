@@ -1,7 +1,7 @@
 // src/loaders/sequelize.js
 import { Sequelize } from "sequelize";
 import databaseConfig from "../config/database.js";
-import logger from "../utils/logger.js";
+import logger from "../utils/logger.utils.js";
 
 let sequelize;
 

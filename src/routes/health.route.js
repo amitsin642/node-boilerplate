@@ -3,7 +3,7 @@ import express from "express";
 import sequelize from "../loaders/sequelize.js";
 import { createClient } from "redis";
 import config from "../config/config.js";
-import logger from "../utils/logger.js";
+import logger from "../utils/logger.utils.js";
 
 const router = express.Router();
 

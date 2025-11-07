@@ -2,7 +2,7 @@
 import expressLoader from "./loaders/express.js";
 import sequelize from "./loaders/sequelize.js";
 import initializeRedis from "./loaders/redis.js";
-import logger from "./utils/logger.js";
+import logger from "./utils/logger.utils.js";
 
 export default async function createApp() {
   logger.info("🚀 Initializing application...");

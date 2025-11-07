@@ -1,5 +1,5 @@
 // src/testLogger.js
-import logger from "./utils/logger.js";
+import logger from "./utils/logger.utils.js";
 
 logger.info("Server started successfully");
 logger.warn("Low disk space");

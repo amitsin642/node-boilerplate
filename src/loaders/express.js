@@ -6,7 +6,7 @@ import compression from "compression";
 import morgan from "morgan";
 import routes from "../routes/index.js";
 import { errorHandler, notFoundHandler } from "../middlewares/errorHandler.js";
-import logger from "../utils/logger.js";
+import logger from "../utils/logger.utils.js";
 import config from "../config/config.js";
 
 export default async function expressLoader() {
