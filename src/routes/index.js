@@ -1,17 +1,20 @@
 // src/routes/index.js
 import express from "express";
+import healthRoutes from "./health.route.js";
 import { asyncHandler } from "../middlewares/asyncHandler.js";
 
 const router = express.Router();
 
-// ✅ Health Check Route
+// Base health route
+router.use("/health", healthRoutes);
+
+// Example test route
 router.get(
-  "/health",
+  "/ping",
   asyncHandler(async (req, res) => {
     res.status(200).json({
       success: true,
-      message: "Server is healthy",
-      timestamp: new Date().toISOString(),
+      message: "Pong 🏓",
     });
   })
 );

@@ -7,16 +7,18 @@ import logger from "./utils/logger.js";
 export default async function createApp() {
   logger.info("🚀 Initializing application...");
 
-  // Initialize Redis
-  await initializeRedis();
-
-  // Test DB Connection
+  // Test DB
   await sequelize.authenticate();
   logger.info("✅ Database connection verified.");
 
-  // Initialize Express
-  const app = await expressLoader();
+  // Redis init
+  await initializeRedis();
+  logger.info("✅ Redis initialized.");
 
+  // Express init
+  const app = await expressLoader();
   logger.info("✅ Express app initialized.");
+
+  logger.info("🔥 All systems operational.");
   return app;
 }
